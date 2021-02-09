@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LivingHigh</title>
+    <meta name="title" content="Livnhigh">
+    <meta name="description" content="">
+    <!-- Open Graph / Facebook-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.livnhigh.co.nz/">
+    <meta property="og:title" content="Livnhigh">
+    <meta itemprop="name" content="Livnhigh">
+    <meta property="og:description" content="">
+    <meta itemproperty="description" content="">
+    <meta property="og:image" content="">
+    <meta itemprop="thumbnailUrl" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="/css/site.css"  type="text/css"/>
+    <link rel="stylesheet" href="/css/style.css"  type="text/css">
+</head>
+<body>
+    <header class="header">        
+        <div class="row">
+            <div class="col">
+                <span class="menu-icon" onclick="openNav()">&#9776;</span>
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="overlay-content">
+                        <a id="homeMenue" href="#">Home</a>
+                        <a id="productsMenue" href="#">Products</a>
+                        <a id="aboutUsMenue" href="#">About Us</a>
+                        <a id="joinUsMeneue" href="#">Join With Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col company-logo">
+                <img src="/images/logo.png" class="img-fluid" />
+            </div>
+            <div class="col social-media">
+                <span class="social-media-msg">follow us</span>
+                <a href="https://www.facebook.com/drinklivnhigh">
+                    <img src="/images/facebook_icon34.png" class="facebookIcon" />
+                </a>
+                <a href="https://www.instagram.com/drinklivnhigh" >
+                    <img src="/images/instagram_icon34.png" class="instagramIcon" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+    <div id="section-1" class="bg blue">
+<section class="active" data-section="0">
+    <div id="homePanel" class="section-main">
+        <div id="wellcomeMsgPanel">
+            <div id="wellcomeCanes" class="section-main-image">
+            </div>
+            <div id="wellcomeMsg">
+                <div class="row" style="margin-right: 0px;">
+                    <div class="col-2"></div>
+                    <div class="col section-main-message">
+                        <h1>The Fun<br />Never Stops</h1>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+                <div class="row" style="margin-right: 0px;">
+                    <div class="col-2"></div>
+                    <div class="col text-center">
+                        <div id="wellcomTagline" style="display: none">
+                            <h4>
+                                With zero sugar and less calories, worry less about what you're drinking<br />
+                                and focus on having a great time with friends.
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+        <div id="ourStory" style="display:none;">
+            <div class="row" style="margin-right: 0px;">
+                <div class="col"></div>
+                <div class="col-6 section-main-sub-message">
+                    <h2>Our Product</h2>
+                    <p>
+                        With zero sugar and less calories, worry less about what you're drinking<br /> 
+                        and focus on having a great time with friends.
+                    </p>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <div id="vodkaRaspberry" style="height: 100%; top: 1200px; display: none;">
+            <div style="height:70%; width: 100%">
+                <div class="section-product">
+                    <div class="section-product-detail-pc">
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="section-product-tagline-left">Zero Sugar</h4>
+                            </div>
+                            <div class="col" style="padding-left: 10px; padding-right: 10px;">
+                                <div class="section-product-type-left">
+                                    <img src="/images/big icons_raspberry.png" align="right" class="section-product-type-img" />
+                                    <p class="section-product-name">vodka and raspberry with sparkling water</p>
+                                </div>
+                            </div>
+                            <div class="col text-center">
+                                <img src="/images/raspberry-can.png" class="section-product-img" />
+                            </div>
+                            <div class="col">
+                                <div class="section-product-type-right"> 
+                                    <p class="section-product-type-info">10-pack cans</p>
+                                    <button type="button" class="btn btn-outline-dark btn-lg">ADD TO CART</button>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h4 class="section-product-tagline-right">Zero Sugar</h4>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="section-product-detail-mobile">
+                        <div class="row" style="margin: 0;">
+                            <div class="col">
+                                <h4 class="section-product-tagline-left">Zero Sugar</h4>
+                            </div>
+                            <div class="col" style="padding-left: 0px;">
+                                <div style="text-align: center;">
+                                    <p class="section-product-name">vodka and raspberry with sparkling water</p>
+                                    <img src="/images/raspberry-can.png" class="section-product-img" />
+                                    <div class="section-product-add-to-cart">
+                                        <button type="button" class="btn btn-secondary">ADD TO CART</button>
+                                    </div>                                    
+                                </div>                                
+                            </div>
+                            <div class="col">
+                                <h4 class="section-product-tagline-right">Zero Sugar</h4>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>                
+            </div>
+            <div class="product-description">
+                <div class="product-description-panel">
+                    <p class="product-description-info">
+                        A product description is the marketing copy used to describe a product's value proposition to potential customers.
+                    </p>
+                    <div class="product-description-imgs">
+                        <img src="/images/small_icons_raspberry_select.png" />
+                        <img src="/images/small_icons_apple_pear_un-select.png" />
+                        <img src="/images/small_icons_passionfruit_un-select.png" />
+                        <img src="/images/small_icons_guava pink_un-select.png" />
+                        <img src="/images/small_icons_pomegranate_un-select.png" />
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </div>
+</section>
+<section data-section="1">
+    <div id="applePearPanel" style="display: block;" class="applePear-bg">
+        <div id="applePear" style="display: block; height:70%; width: 100%">
+            <div class="section-product">
+                <div class="section-product-detail-pc">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="section-product-tagline-left">Zero Sugar</h4>
+                        </div>
+                        <div class="col" style="padding-left: 10px; padding-right: 10px;">
+                            <div class="section-product-type-left">
+                                <img src="/images/big_icons_apple_pear.png" align="right" class="section-product-type-img" />
+                                <p class="section-product-name">vodka, apple and pear with sparkling water</p>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <img src="/images/apple-pear-can.png" class="section-product-img" />
+                        </div>
+                        <div class="col">
+                            <div class="section-product-type-right">
+                                <p class="section-product-type-info">10-pack cans</p>
+                                <button type="button" class="btn btn-outline-dark btn-lg">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4 class="section-product-tagline-right">Zero Sugar</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-product-detail-mobile">
+                    <div class="row" style="margin: 0;">
+                        <div class="col">
+                            <h4 class="section-product-tagline-left">Zero Sugar</h4>
+                        </div>
+                        <div class="col" style="padding-left: 0px;">
+                            <div style="text-align: center;">
+                                <p class="section-product-name">vodka, apple and pear with sparkling water</p>
+                                <img src="/images/apple-pear-can.png" class="section-product-img" />
+                                <div class="section-product-add-to-cart">
+                                    <button type="button" class="btn btn-secondary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4 class="section-product-tagline-right">Zero Sugar</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-description">
+            <div class="product-description-panel">
+                <p class="product-description-info">
+                    A product description is the marketing copy used to describe a product's value proposition to potential customers.
+                </p>
+                <div class="product-description-imgs">
+                    <img src="/images/small_icons_raspberry_un-select.png" />
+                    <img src="/images/small_icons_apple_pear_select.png" />
+                    <img src="/images/small_icons_passionfruit_un-select.png" />
+                    <img src="/images/small_icons_guava pink_un-select.png" />
+                    <img src="/images/small_icons_pomegranate_un-select.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-section="2">
+    <div id="passionfruit" style="display: block;" class="passionfruit-bg">
+        <div style="height:70%; width: 100%">
+            <div class="section-product">
+                <div class="section-product-detail-pc">
+                    <div class="row">
+                        <div class="col text-center">
+                            <h4 class="section-product-tagline-left">Zero Sugar</h4>
+                        </div>
+                        <div class="col">
+                            <div class="section-product-type-left">
+                                <img src="/images/big_icons_passionfruit.png" align="right" class="section-product-type-img" />
+                                <p class="section-product-name">vodka and passionfruit with spakling water</p>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <img src="/images/passionfruit-can.png" class="section-product-img" />
+                        </div>
+                        <div class="col">
+                            <div class="section-product-type-right">
+                                <p class="section-product-type-info">10-pack cans</p>
+                                <button type="button" class="btn btn-outline-dark btn-lg">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4 class="section-product-tagline-right">Zero Sugar</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-product-detail-mobile">
+                    <div class="row" style="margin: 0;">
+                        <div class="col">
+                            <h4 class="section-product-tagline-left">Zero Sugar</h4>
+                        </div>
+                        <div class="col" style="padding-left: 0px;">
+                            <div style="text-align: center;">
+                                <p class="section-product-name">vodka and passionfruit with spakling water</p>
+                                <img src="/images/passionfruit-can.png" class="section-product-img" />
+                                <div class="section-product-add-to-cart">
+                                    <button type="button" class="btn btn-secondary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4 class="section-product-tagline-right">Zero Sugar</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-description">
+            <div class="product-description-panel">
+                <p class="product-description-info">
+                    A product description is the marketing copy used to describe a product's value proposition to potential customers.
+                </p>
+                <div class="product-description-imgs">
+                    <img src="/images/small_icons_raspberry_un-select.png" />
+                    <img src="/images/small_icons_apple_pear_un-select.png" />
+                    <img src="/images/small_icons_passionfruit_select.png" />
+                    <img src="/images/small_icons_guava pink_un-select.png" />
+                    <img src="/images/small_icons_pomegranate_un-select.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-section="3">
+    <div id="guavapink" style="display: block;" class="guavapink-bg">
+        <div style="height:70%; width: 100%">
+            <div class="section-product">
+                <div class="section-product-detail-pc">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="section-product-tagline-left">Zero Sugar</h4>
+                        </div>
+                        <div class="col">
+                            <div class="section-product-type-left">
+                                <img src="/images/big icons_guava pink.png" align="right" class="section-product-type-img" />
+                                <p class="section-product-name">gin and guava pink with sparkling water</p>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <img src="/images/gin-guava-pink-can.png" class="section-product-img" />
+                        </div>
+                        <div class="col">
+                            <div class="section-product-type-right">
+                                <p class="section-product-type-info">10-pack cans</p>
+                                <button type="button" class="btn btn-outline-dark btn-lg">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4 class="section-product-tagline-right">Zero Sugar</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-product-detail-mobile">
+                    <div class="row" style="margin: 0;">
+                        <div class="col">
+                            <h4 class="section-product-tagline-left">Zero Sugar</h4>
+                        </div>
+                        <div class="col" style="padding-left: 0px;">
+                            <div style="text-align: center;">
+                                <p class="section-product-name">gin and guava pink with sparkling water</p>
+                                <img src="/images/gin-guava-pink-can.png" class="section-product-img" />
+                                <div class="section-product-add-to-cart">
+                                    <button type="button" class="btn btn-secondary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4 class="section-product-tagline-right">Zero Sugar</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-description">
+            <div class="product-description-panel">
+                <p class="product-description-info">
+                    A product description is the marketing copy used to describe a product's value proposition to potential customers.
+                </p>
+                <div class="product-description-imgs">
+                    <img src="/images/small_icons_raspberry_un-select.png" />
+                    <img src="/images/small_icons_apple_pear_un-select.png" />
+                    <img src="/images/small_icons_pomegranate_un-select.png" />
+                    <img src="/images/small_icons_guava_select.png" />
+                    <img src="/images/small_icons_pomegranate_un-select.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-section="4">
+    <div id="pomegranate" style="display: block;" class="pomegranate-bg">
+        <div style="height:70%; width: 100%">
+            <div class="section-product">
+                <div class="section-product-detail-pc">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="section-product-tagline-left">Zero Sugar</h4>
+                        </div>
+                        <div class="col">
+                            <div class="section-product-type-left">
+                                <img src="/images/big_icons_pomegranate.png" align="right" class="section-product-type-img" />
+                                <p class="section-product-name">gin, pomegranate and hibiscus with sparkling water</p>
+                            </div>
+                        </div>
+                        <div class="col text-center">
+                            <img src="/images/pomegranate-hibiscus-can.png" class="section-product-img" />
+                        </div>
+                        <div class="col">
+                            <div class="section-product-type-right">
+                                <p class="section-product-type-info">10-pack cans</p>
+                                <button type="button" class="btn btn-outline-dark btn-lg">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4 class="section-product-tagline-right">Zero Sugar</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-product-detail-mobile">
+                    <div class="row" style="margin: 0;">
+                        <div class="col">
+                            <h4 class="section-product-tagline-left">Zero Sugar</h4>
+                        </div>
+                        <div class="col" style="padding-left: 0px;">
+                            <div style="text-align: center;">
+                                <p class="section-product-name">gin and guava pink with sparkling water</p>
+                                <img src="/images/pomegranate-hibiscus-can.png" class="section-product-img" />
+                                <div class="section-product-add-to-cart">
+                                    <button type="button" class="btn btn-secondary">ADD TO CART</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h4 class="section-product-tagline-right">Zero Sugar</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-description">
+            <div class="product-description-panel">
+                <p class="product-description-info">
+                    A product description is the marketing copy used to describe a product's value proposition to potential customers.
+                </p>
+                <div class="product-description-imgs">
+                    <img src="/images/small_icons_raspberry_un-select.png" />
+                    <img src="/images/small_icons_apple_pear_un-select.png" />
+                    <img src="/images/small_icons_pomegranate_un-select.png" />
+                    <img src="/images/small_icons_guava pink_un-select.png" />
+                    <img src="/images/small_icons_pomegranate_select.png" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-section="5">
+    <div id="aboutUs" style="display: none;" class="aboutus-bg">
+        <div class="row" style="margin-right: 0px;">
+            <div class="col"></div>
+            <div class="col-6 section-main-sub-message">
+                <h2>About Us</h2>
+                <p>A short story is story about us fiction that typically can be read in one sitting and focuses on a self-contained incident or series of linked incidents, with the intent of evoking</p>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</section>
+<section data-section="6">
+    <div id="joinClub" style="display: none;" class="joinus-bg">
+        <form action="/savedata" method="post">
+        <div class="joinus-panel">
+            <div class="row" style="margin-right: 0px;">
+                <h2 style="text-align: center; width: 100%">Join With Livnhigh Club</h2>
+                <p>This is Join With Livnhigh Club discription.</p>
+            </div>
+            <div class="row" style="margin-right: 0px;">
+                <div class="col-25">
+                    <label for="fname">Full Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row" style="margin-right: 0px;">
+                <div class="col-25">
+                    <label for="birthdate">Date of Birth</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="birthdate" name="dateofbirth" placeholder="Your date of birth..">
+                </div>
+            </div>
+            <div class="row" style="margin-right: 0px;">
+                <div class="col-25">
+                    <label for="lname">Email Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your email address..">
+                </div>
+            </div>
+            <div class="row" style="margin-right: 0px; margin-top: 30px;display: flex; align-items: center; justify-content: center;">
+                <input type="submit" value="Submit">
+            </div>
+        </div>    
+    </form>       
+    </div>
+</section>
+<script type="text/javascript">
+    let sections = document.getElementsByTagName('section');
+    // tracks index of current section
+    let currentSectionIndex = 0;
+    let currentY = 0;
+
+    function movingUp() {
+        if (currentSectionIndex == 1) {
+            //$("#vodkaRaspberry").stop(true, false).animate({ bottom: '100vh', opacity: '1' }, 1500);
+            $("#wellcomTagline").stop(true, false).fadeOut(1000, function () {
+                //$(".section-main-image").css({ "display": "block" });
+                $("#wellcomeCanes").css({ display: 'block' });
+                $("#wellcomeMsg").css({ "display": "block" });
+                $(".section-main-image").css({ "bottom": "100vh" });
+                $(".section-main-image").stop(true, false).animate({ bottom: '0vh', opacity: '1' }, 1500);
+            });
+            currentSectionIndex--;
+        }
+        else if (currentSectionIndex == 2) {
+            document.getElementById("vodkaRaspberry").style.display = "none";
+            $("#wellcomeCanes").css({ display: 'none' })
+            
+            $("#wellcomeMsgPanel").css({ display: 'block' });
+            $("#wellcomeMsg").css({ display: 'block' }).fadeIn(1500);
+            $("#wellcomTagline").css({ display: 'block' }).fadeIn(1000);
+            currentSectionIndex--;
+        }
+        else if (currentSectionIndex == 3) {
+            $("#applePear").stop(true, false).fadeOut( 1000, function () {
+                sections[1].className = '';
+            });
+            sections[0].className = 'active';
+            document.getElementById("vodkaRaspberry").style.display = "block";
+            $(".section-main").stop(true, false).css({ display: "none" }).fadeIn(1500);
+            currentSectionIndex--;
+        }
+        else if (currentSectionIndex == 4) {
+            $("#passionfruit").stop(true, false).fadeOut(1000, function () {
+                sections[2].className = '';
+            });
+            sections[1].className = 'active';
+            //document.getElementById("vodkaRaspberry").style.display = "block";
+            $("#applePear").stop(true, false).css({ display: "none" }).fadeIn(1500);
+            currentSectionIndex--;
+            //$("#passionfruit").stop(true, false).animate({ left: '100%', opacity: '0' }, 1000, function () {
+            //    sections[2].className = '';
+            //});
+            //sections[1].className = 'active';
+            //$("#applePear").stop(true, false).animate({ left: '0px', opacity: '1' }, 1000);
+            //currentSectionIndex--;
+        }
+        else if (currentSectionIndex == 5) {
+            $("#guavapink").stop(true, false).fadeOut(1000, function () {
+                sections[3].className = '';
+            });
+            sections[2].className = 'active';
+            $("#passionfruit").stop(true, false).css({ display: "none" }).fadeIn(1500);
+            currentSectionIndex--;
+
+            //$("#guavapink").stop(true, false).animate({ left: '100%', opacity: '0' }, 1000, function () {
+            //    sections[3].className = '';
+            //});
+            //sections[2].className = 'active';
+            //$("#passionfruit").stop(true, false).animate({ left: '0px', opacity: '1' }, 1000);
+            //currentSectionIndex--;
+        }
+        else if (currentSectionIndex == 6) {
+            $("#pomegranate").stop(true, false).fadeOut(1000, function () {
+                sections[4].className = '';
+            });
+            sections[3].className = 'active';
+            $("#guavapink").stop(true, false).css({ display: "none" }).fadeIn(1500);
+            currentSectionIndex--;
+
+            //$("#pomegranate").stop(true, false).animate({ left: '100%', opacity: '0' }, 1000, function () {
+            //    sections[4].className = '';
+            //});
+            //sections[3].className = 'active';
+            //$("#guavapink").stop(true, false).animate({ left: '0px', opacity: '1' }, 1000);
+            //currentSectionIndex--;
+        }
+        else if (currentSectionIndex == 7) {
+            $("#aboutUs").stop(true, false).animate({ left: '100%' }, 1000, function () {
+                sections[5].className = '';
+            });
+            sections[4].className = 'active';
+            $("#pomegranate").stop(true, false).animate({ left: '0px', opacity: '1' }, 1000);
+            currentSectionIndex--;
+        }
+        else if (currentSectionIndex == 8) {
+            $("#joinClub").stop(true, false).animate({ left: '100%' }, 1000, function () {
+                sections[6].className = '';
+            });
+            sections[5].className = 'active';
+            $("#aboutUs").css({ display: 'block' }).animate({ left: '0px', opacity: '1' }, 1000);
+            currentSectionIndex--;
+        }
+    }
+
+    function movingDown() {
+        if (currentSectionIndex == 0) {
+            $(".section-main-image").stop(true, false).animate({ bottom: '100vh', opacity: '0' }, 1500);
+            $("#wellcomTagline").stop(true, false).fadeIn(1000);
+            currentSectionIndex++;
+        }
+        else if (currentSectionIndex == 1) {
+            $("#wellcomeMsg").stop(true, false).fadeOut(1500, function () {
+                $("#vodkaRaspberry").stop(true, false).fadeIn(1000);
+            });
+            //$("#vodkaRaspberry").animate({ top: '0vh', display: 'block'}, 1500);
+            currentSectionIndex++;
+        }
+        else if (currentSectionIndex == 2) {
+            /*$(".section-main").animate({ left: '-100%', opacity: '0' }, 1000, function () {
+                sections[0].className = '';
+                sections[1].className = 'active';
+                //$("#applePear").css({ "display": "block", "opacity": 0, "left": "100vw" });
+                //$("#applePear").animate({ left: '0px', opacity: '1' }, 1000);
+                
+                //$("#applePear").css({ left: 1000, position: 'absolute'})  // Set the left to its calculated position
+                //    .animate({ "left": "0px" }, "slow");
+            });
+            sections[1].className = 'active';
+            $("#applePear").css({ "display": "block", "opacity": 0, "left": "100vw", position: 'fixed' });
+            $("#applePear").animate({ left: '0px', opacity: '1' }, 1000);*/
+
+            $("#homePanel").fadeOut(1500, function () {
+                sections[0].className = '';
+            });
+            sections[1].className = 'active';
+            $("#applePearPanel").css({ display: "block" });
+            $("#applePear").css({ display: "none" }).fadeIn(1000);
+            //$("#applePear").animate({ left: 200, opacity: "show" }, 1500);
+            currentSectionIndex++;
+        }
+        else if (currentSectionIndex == 3) {
+            $("#applePear").fadeOut(1000, function () {
+                sections[1].className = '';
+                ;
+            });
+            sections[2].className = 'active'
+            $("#passionfruit").css({ display: "block" });
+            $("#passionfruit").css({ display: "none" }).fadeIn(1000);
+            
+            
+            //$("#applePear").animate({ left: '-100%', opacity: '0' }, 1000, function () {
+            //    sections[1].className = '';
+            //});
+            //sections[2].className = 'active';
+            //$("#passionfruit").css({ "display": "block", "position": "relative", "opacity": 0, "left": "100%", position: 'fixed'  });
+            //$("#passionfruit").stop(true, false).animate({ left: '0px', opacity: '1' }, 1000);
+            currentSectionIndex++;
+        }
+        else if (currentSectionIndex == 4) {
+            $("#passionfruit").fadeOut(1000, function () {
+                sections[2].className = '';
+            });
+            sections[3].className = 'active'
+            $("#guavapink").css({ display: "block" });
+            $("#guavapink").css({ display: "none" }).fadeIn(1000);
+            //$("#passionfruit").animate({ left: '-100%', opacity: '0' }, 1000, function () {
+            //    sections[2].className = '';
+            //});
+            //sections[3].className = 'active';
+            //$("#guavapink").css({ "display": "block", "position": "relative", "opacity": 0, "left": "100%", position: 'fixed'  });
+            //$("#guavapink").stop(true, false).animate({ left: '0px', opacity: '1' }, 1000);
+
+            currentSectionIndex++;
+        }
+        else if (currentSectionIndex == 5) {
+            $("#guavapink").fadeOut(1000, function () {
+                sections[3].className = '';
+            });
+            sections[4].className = 'active'
+            $("#pomegranate").css({ display: "block" });
+            $("#pomegranate").css({ display: "none" }).fadeIn(1000);
+            //$("#guavapink").animate({ left: '-100%', opacity: '0' }, 1000, function () {
+            //    sections[3].className = '';
+            //});
+            //sections[4].className = 'active';
+            //$("#pomegranate").css({ "display": "block", "position": "relative", "opacity": 0, "left": "100%", position: 'fixed'  });
+            //$("#pomegranate").stop(true, false).animate({ left: '0px', opacity: '1' }, 1000);
+
+            currentSectionIndex++;
+        }
+        else if (currentSectionIndex == 6) {
+            $("#pomegranate").animate({ left: '-100%' }, 1000, function () {
+                sections[4].className = '';
+            });
+            sections[5].className = 'active';
+            $("#aboutUs").css({ "display": "block", "position": "relative", "left": "100%", position: 'fixed'  });
+            $("#aboutUs").stop(true, false).animate({ left: '0px', opacity: '1' }, 1000);
+
+            currentSectionIndex++;
+        }
+        else if (currentSectionIndex == 7) {
+            $("#aboutUs").animate({ left: '-100%' }, 1000, function () {
+                sections[5].className = '';
+            });
+            sections[6].className = 'active';
+            $("#joinClub").css({ "display": "block", "position": "relative", "left": "100%", position: 'fixed'  });
+            $("#joinClub").stop(true, false).animate({ left: '0px', opacity: '1' }, 1000);
+
+            currentSectionIndex++;
+        }
+    }
+
+    document.addEventListener('touchstart', e => {
+        currentY = e.touches[0].clientY;
+    });
+
+    document.addEventListener('touchend', e => {
+        if (e.changedTouches[0].pageY > currentY) {
+            movingUp();
+        }
+        else if (e.changedTouches[0].pageY < currentY) {            
+            movingDown();
+        }
+             
+    });
+
+    document.addEventListener('keyup', function (e) {
+        if (e.keyCode == 38) {
+            movingUp();
+        }
+        else if (e.keyCode == 40) {
+            movingDown();
+        }
+    });
+
+    var scrolled = 0;
+    document.addEventListener('mousewheel', e => {
+        
+        if (scrolled == 0) {
+            if (e.wheelDeltaY > 0) {
+                // wheel up
+                movingUp();
+
+            } else if (e.wheelDeltaY < 0) {
+                // wheel down
+                movingDown();
+            }
+            scrolled++
+        }
+
+        clearTimeout($.data(this, 'scrollTimer'));
+        $.data(this, 'scrollTimer', setTimeout(function () {
+            // do something
+            scrolled = 0;
+        }, 250));
+        
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#homeMenue').click(function () {   
+            hideItems();
+
+            sections[0].className = "active";
+
+            document.getElementById("wellcomeMsgPanel").style.display = "block";
+            document.getElementById("wellcomeMsg").style.display = "block";
+            $(".section-main").stop(true, false).animate({ left: '0px', opacity: '1' }, 1000);
+            $(".section-main-image").stop(true, false).animate({ bottom: '0vh', opacity: '1' }, 1500);
+
+            currentSectionIndex = 0;            
+        })
+
+        $('#productsMenue').click(function () {
+            hideItems();
+
+            sections[0].className = 'active';
+
+            document.getElementById("homePanel").style.display = "block";
+            $("#vodkaRaspberry").stop(true, false).fadeIn(1000);
+
+            currentSectionIndex = 2;
+        })
+        
+        $('#aboutUsMenue').click(function () {
+            hideItems();
+
+            sections[5].className = 'active';
+
+            $("#aboutUs").css({ display: 'block' }).animate({ left: '0px', opacity: '1' }, 1000);
+
+            currentSectionIndex = 7;
+        })
+
+        $('#joinUsMeneue').click(function () {
+            hideItems();
+
+            sections[6].className = 'active';
+
+            $("#joinClub").css({ display: 'block' }).animate({ left: '0px', opacity: '1' }, 1000);
+
+            currentSectionIndex = 8;
+        })
+    })
+
+    function hideItems() {
+        closeNav();
+
+        sections[0].className = '';
+        sections[1].className = '';
+        sections[2].className = '';
+        sections[3].className = '';
+        sections[4].className = '';
+        sections[5].className = '';
+        sections[6].className = '';
+
+        //document.getElementsByClassName("section-main").style.display = "none";
+        //document.getElementsByClassName("section-main-image").style.display = "none";
+        document.getElementById("wellcomeMsg").style.display = "none";
+        document.getElementById("wellcomTagline").style.display = "none";
+        document.getElementById("vodkaRaspberry").style.display = "none";
+        document.getElementById("wellcomeMsgPanel").style.display = "none";
+    }
+</script>
+    </div>
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/bootstrap.bundle.min.js"></script>
+    <script src="/javascript/site.js" asp-append-version="true"></script>
+</body>
+</html>
