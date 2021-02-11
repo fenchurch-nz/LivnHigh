@@ -1,43 +1,54 @@
-const express = require('express')
-const bodyParser = require('body-parser')
-const  MongoClient = require('mongodb').MongoClient
-//MongoClient.Promise = global.Promise;
-const port = 63564
-const url ='mongodb+srv://userMakan:TSchVEARysJw7t%24N@makan.d7vnw.mongodb.net/Livnhigh?authSource=admin&replicaSet=atlas-umvccw-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true';
-const fs= require('fs')
+console.log('Server-side code running');
 
+const express = require('express');
+const MongoClient = require('mongodb').MongoClient;
 
-const app = express()
-app.use(bodyParser.urlencoded({ extended: true }));
+const app = express();
 
-// app.set('index.html')
- app.use(express.static(__dirname + '/public'));
-// app.get('/',(req, res) => {
-// res.render('index')
-// })
+// serve files from the public directory
+app.use(express.static('public'));
 
-app.get('/', (req,res)=>
-{
-  res.writeHead(200, {'content-stype':'text/html'})
-  fs.createReadStream('index.html').pipe(res)
-})
+// connect to the db and start the express server
+let db;
 
-app.listen(port, () => {
-    console.log("server listerning on port " + port)
-})
-// app.post('/savedata', function (req, res) {
-//     dbConn.then(function(db) {
-//         db.MemberInfo.insertOne(req.body);
-//     });    
-//     res.send('Data received:\n' + JSON.stringify(req.body));
-// });
-MongoClient.connect(url, function(err, db){
-  var dbo = db.db('Livnhigh');
-   app.post('/savedata', function (req, res) {
-    var myobj = {"name":req.body.firstname,"dateOfBirth":req.body.dateofbirth,"email":req.body.lastname}
-    dbo.collection("MemberInfo").insertOne(myobj, function(err, res) {
-      db.close();
-      });
-    });
+// Replace the URL below with the URL for your database
+const url =  'mongodb+srv://userMakan:TSchVEARysJw7t%24N@makan.d7vnw.mongodb.net/Livnhigh?authSource=admin&replicaSet=atlas-umvccw-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true';
+
+MongoClient.connect(url, (err, database) => {
+  if(err) {
+    return console.log(err);
+  }
+  db = database;
+  // start the express web server listening on 8080
+  app.listen(8080, () => {
+    console.log('listening on 8080');
+  });
 });
 
+// serve the homepage
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/index.html');
+});
+
+// add a document to the DB collection recording the click event
+app.post('/clicked', (req, res) => {
+  const click = {clickTime: new Date()};
+  console.log(click);
+  console.log(db);
+
+  db.collection('clicks').save(click, (err, result) => {
+    if (err) {
+      return console.log(err);
+    }
+    console.log('click added to db');
+    res.sendStatus(201);
+  });
+});
+
+// get the click data from the database
+app.get('/clicks', (req, res) => {
+  db.collection('clicks').find().toArray((err, result) => {
+    if (err) return console.log(err);
+    res.send(result);
+  });
+});
