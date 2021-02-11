@@ -16,6 +16,5 @@
   },
    "devDependencies": {
     "nodemon": "^2.0.7"
-     "LivnHigh": "githnub:fenchurch-nz/LivnHigh"
    }
 }
