@@ -165,7 +165,7 @@ section.active {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     text-transform: uppercase;
-    top: calc(50% - 12px);
+    top: calc(50% - 60px);
     position: fixed;
     font-weight: bold;
     left: -65px;
@@ -176,7 +176,7 @@ section.active {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     text-transform: uppercase;
-    top: calc(50% - 12px);
+    top: calc(50% - 60px);
     position: fixed;
     font-weight: bold;
     right: -60px;
