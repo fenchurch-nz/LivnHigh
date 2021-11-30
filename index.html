@@ -505,6 +505,31 @@
         </div>
     </div>
         <script type="text/javascript">
+    $(document).ready(function () {
+        var dc = document.cookie;
+        var begin = dc.indexOf("agecheck=yes");
+        if (begin < 0) {
+            $("html").addClass("lockBody");
+            $("body").addClass("lockBody");
+            $('#AgeCheck').bPopup(
+            {
+                easing: 'easeOutBack', //uses jQuery easing plugin
+                speed: 500,
+                modal: true,
+                escClose: false,
+                modalClose: false,
+                transition: 'slideDown'
+            });
+        }
+
+        $('#age-yes').click(function () {
+            document.cookie = "agecheck=yes; path=/";
+            $('#AgeCheck').bPopup().close();
+            document.getElementById("AgeCheck").style.display = "none";
+        });
+    });
+</script>
+        <script type="text/javascript">
          $(document).ready(function () {
         $('.footer-block .title').on('click', function () {
             var e = window, a = 'inner';
