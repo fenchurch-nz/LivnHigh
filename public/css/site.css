@@ -547,6 +547,7 @@ input[type=submit] {
             display: none;
             width: 500px;
             max-width: 100%;
+            position: absolute;
         }
 
             #AgeCheck .title {
