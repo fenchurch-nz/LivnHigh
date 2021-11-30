@@ -482,9 +482,43 @@
                 <button  id="submit" type="submit"> Submit </button>
             </div>
         </div>    
-       
+        <div id="AgeCheck">
+        <div style="font-family: arial, helvetica, sans-serif; padding: 18px;">
+            <img src="/Themes/FenchurchThemes/Content/images/FENCHURCH-logo-1024x128.png" style="width:90%;height:90%" alt="" />
+            <div id="YesNo18">
+                <h2>Welcome!</h2>
+                <h3>Are you over the age of 18?</h3>
+                <table>
+                    <tr>
+                        <td><img alt="yes" id="age-yes" src="/Themes/FenchurchThemes/Content/images/age_yes.png" style="width:50%;height:25%;cursor:pointer" class="pic2" /></td>
+                        <td>
+                            &nbsp;&nbsp;
+                            <a href="http://www.alcohol.org.nz/">
+                                <img alt="no" src="/Themes/FenchurchThemes/Content/images/age_no.png" style="width:50%;height:25%;cursor:pointer" class="pic2" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
     </div>
 </section>
+        <script type="text/javascript">
+         $(document).ready(function () {
+        $('.footer-block .title').on('click', function () {
+            var e = window, a = 'inner';
+            if (!('innerWidth' in window)) {
+                a = 'client';
+                e = document.documentElement || document.body;
+            }
+            var result = { width: e[a + 'Width'], height: e[a + 'Height'] };
+            if (result.width < 769) {
+                $(this).siblings('.list').slideToggle('slow');
+            }
+        });
+    });
+        </script>
 <script type="text/javascript">
     let sections = document.getElementsByTagName('section');
     // tracks index of current section
