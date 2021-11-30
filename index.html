@@ -512,20 +512,11 @@
         if (begin < 0) {
             $("html").addClass("lockBody");
             $("body").addClass("lockBody");
-            $('#AgeCheck').bPopup(
-            {
-                easing: 'easeOutBack', //uses jQuery easing plugin
-                speed: 500,
-                modal: true,
-                escClose: false,
-                modalClose: false,
-                transition: 'slideDown'
-            });
+            document.getElementById("AgeCheck").style.display = "block";
         }
 
         $('#age-yes').click(function () {
             document.cookie = "agecheck=yes; path=/";
-            $('#AgeCheck').bPopup().close();
             document.getElementById("AgeCheck").style.display = "none";
         });
     });
