@@ -539,4 +539,39 @@ input[type=submit] {
             padding-top: 100px;
         }
     }
+   #AgeCheck {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 0px;
+            color: #333;
+            display: none;
+            width: 500px;
+            max-width: 100%;
+        }
 
+            #AgeCheck .title {
+                font-family: "BrandonTextWeb-Black",Verdana,Arial,Helvetica,sans-serif;
+                text-transform: uppercase;
+                font-size: 26px;
+                box-sizing: border-box;
+                margin: 0px;
+                font-size: 26px;
+                padding-bottom: 0;
+                color: #3C2620;
+            }
+
+            #AgeCheck .image {
+                margin-top: 0px;
+                max-width: 100%;
+            }
+
+            #AgeCheck .text {
+                margin-top: 0px;
+                margin-bottom: 0px;
+                color: #A5A3A3;
+            }
+
+        #YesNo18 {
+            text-align: center;
+            margin-top: 0px;
+        }
