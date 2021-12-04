@@ -379,7 +379,7 @@ input[type=submit] {
 
 /********************************************* Big PC styles *******************************************************************/
 @media all and (min-width: 1600px) {
-    .section-product-img {
+      .section-product-img {
         width: 300px;
         transition: width 0.3s;
     }
@@ -408,7 +408,9 @@ input[type=submit] {
 
     /********************************************* medium tablet styles *******************************************************************/
     @media all and (max-width: 991px) {
-
+   #AgeCheck {
+                margin: 215px 0px 0px 0px;
+        }
         .section-product-name {
             float: left;
             font-size: 22px;
@@ -428,6 +430,9 @@ input[type=submit] {
 
     /********************************************* medium tablet styles *******************************************************************/
     @media all and (max-width: 769px) {
+           #AgeCheck {
+                margin: 215px 0px 0px 0px;
+        }
         h1 {
             font-size: 72px;
         }
@@ -477,6 +482,9 @@ input[type=submit] {
     /********************************************* IPad *******************************************************************/
 
     @media all and (max-width: 479px) {
+         #AgeCheck {
+                margin: 215px 0px 0px 0px;
+        }
         h1 {
             font-size: 48px;
         }
