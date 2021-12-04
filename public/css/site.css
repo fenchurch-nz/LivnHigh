@@ -407,7 +407,17 @@ input[type=submit] {
 
 
     /********************************************* medium tablet styles *******************************************************************/
-    @media all and (max-width: 991px) {
+@media only screen and (max-width: 1024px) and (min-height: 768px)  {
+     #AgeCheck {
+                margin: 295px 0px 0px 130px!important;
+        }
+}
+@media only screen and (max-width: 1366px) and (min-height: 1024px)  {
+     #AgeCheck {
+                margin: 410px 0px 0px 265px!important;
+        }
+}
+@media all and (max-width: 991px) {
    #AgeCheck {
                 margin: 215px 0px 0px 0px!important;
         }
