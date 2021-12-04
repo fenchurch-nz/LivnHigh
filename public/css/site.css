@@ -409,7 +409,7 @@ input[type=submit] {
     /********************************************* medium tablet styles *******************************************************************/
     @media all and (max-width: 991px) {
    #AgeCheck {
-                margin: 215px 0px 0px 0px;
+                margin: 215px 0px 0px 0px!important;
         }
         .section-product-name {
             float: left;
@@ -431,7 +431,7 @@ input[type=submit] {
     /********************************************* medium tablet styles *******************************************************************/
     @media all and (max-width: 769px) {
            #AgeCheck {
-                margin: 215px 0px 0px 0px;
+                margin: 215px 0px 0px 0px!important;
         }
         h1 {
             font-size: 72px;
@@ -483,7 +483,7 @@ input[type=submit] {
 
     @media all and (max-width: 479px) {
          #AgeCheck {
-                margin: 215px 0px 0px 0px;
+                margin: 215px 0px 0px 0px!important;
         }
         h1 {
             font-size: 48px;
