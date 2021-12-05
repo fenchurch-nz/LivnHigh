@@ -418,6 +418,10 @@ input[type=submit] {
         }
 }
 @media all and (max-width: 991px) {
+    .section-product-tagline-left {
+     top: calc(50% - 70px);
+     left: -80px;
+}
    #AgeCheck {
                 margin: 215px 0px 0px 0px!important;
         }
@@ -440,6 +444,10 @@ input[type=submit] {
 
     /********************************************* medium tablet styles *******************************************************************/
     @media all and (max-width: 769px) {
+           .section-product-tagline-left {
+     top: calc(50% - 70px);
+     left: -80px;
+}
            #AgeCheck {
                 margin: 215px 0px 0px 0px!important;
         }
@@ -492,6 +500,10 @@ input[type=submit] {
     /********************************************* IPad *******************************************************************/
 
     @media all and (max-width: 479px) {
+           .section-product-tagline-left {
+     top: calc(50% - 70px);
+     left: -80px;
+}
          #AgeCheck {
                 margin: 215px 0px 0px 0px!important;
         }
