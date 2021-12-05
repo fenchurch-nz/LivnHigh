@@ -418,6 +418,10 @@ input[type=submit] {
         }
 }
 @media all and (max-width: 991px) {
+    .section-main-sub-message {
+     padding-top: 18vh;
+      padding-left: 20px;
+}
     .section-product-tagline-left {
      top: calc(50% - 70px);
      left: -80px;
@@ -444,6 +448,10 @@ input[type=submit] {
 
     /********************************************* medium tablet styles *******************************************************************/
     @media all and (max-width: 769px) {
+         .section-main-sub-message {
+     padding-top: 18vh;
+      padding-left: 20px;
+}
            .section-product-tagline-left {
      top: calc(50% - 70px);
      left: -80px;
@@ -500,6 +508,10 @@ input[type=submit] {
     /********************************************* IPad *******************************************************************/
 
     @media all and (max-width: 479px) {
+         .section-main-sub-message {
+     padding-top: 18vh;
+      padding-left: 20px;
+}
            .section-product-tagline-left {
      top: calc(50% - 70px);
      left: -80px;
